@@ -1,0 +1,303 @@
+<html>
+  <style type="text/css">
+    
+    #img9{
+      border-radius: 50px;
+      margin-bottom: 10px;
+    }
+    #img102{
+        height: 488px;
+        width: 700px;
+        border-radius: 50px;
+        border: 10px solid transparent;
+      }
+      #media{
+        /* border: 1px solid red; */
+        height: 200px;
+        width: 100%;
+      }
+      #one{
+        /* border: 1px solid black; */
+        height: 60px;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 80px;
+      }
+      #two{
+        /* border: 1px solid green; */
+        height: 65px;
+        width: 100%;
+        padding-top: 30px;
+      }
+      #two>ul{
+        /* border: 1px solid red; */
+        height:100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        justify-content: space-between;
+        margin-left: 280px;
+        list-style: none;
+      }
+      #ten>ul{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+      }
+      #three{
+        /* border: 1px solid blue; */
+        height: 65px;
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+      }
+      #three>a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .ten:hover{
+            color: red;
+            font-size: 100px;
+            image-resolution: 100px;
+            
+        }
+        
+        .ten{
+          position: relative;
+          display: flex;
+          align-items: center;
+          /* border-radius: 100px; */
+          justify-content: space-around;
+          height: 350px;
+          width: 100%;
+          /* box-shadow: 0 0 10px; */
+          overflow: hidden;
+          /* filter: grayscale(); */
+        }
+       
+        .ten:hover.img-ten{
+          transform: scale(2);
+          transition: 0.5s;
+        }
+        /* .even:hover.img-even{ */
+          /* transform: scale(2); */
+          /* transition: 0.5s; */
+        /* } */
+        .mean{
+          display: flex;
+          justify-content:space-between;
+          position: relative;
+          border-radius: 100px;
+          height: 350px;
+          width: 17%;
+          box-shadow: 0 0 10px;
+          background-color: #00A0DC;
+          overflow: hidden;
+
+        }
+       
+        .mean:hover{
+            color: rgb(237, 5, 5);
+            font-size: 100px;
+            image-resolution: 100px;
+            position:relative;
+            border: 5px solid;
+            border-color: rgb(241, 6, 10);
+            
+        }
+
+        .even{
+          display: flex;
+          justify-content:space-between;
+          position: relative;
+          border-radius: 100px;
+          height: 350px;
+          background-color:#00A0DC;
+          width: 17%;
+          box-shadow: 0 0 10px;
+          overflow: hidden;
+          /* filter: grayscale(); */
+        }
+        .img-even{
+          transform: scale(2);
+          transition: 0.5s;
+        }
+        .even:hover{
+            color: rgb(224, 23, 23);
+            font-size: 100px;
+            border: 5px solid;
+            image-resolution: 100px;
+            border-color: rgb(238, 11, 11);
+            
+        }
+        .odd{
+          position: relative;
+          border-radius: 100px;
+          height: 350px;
+          width: 17%;
+          padding-top: 20px;
+          background-color:#00A0DC;
+          text-align: center;
+          box-shadow: 0 0 10px;
+          overflow: hidden;
+          filter:inherit;
+        }
+        
+        .odd>a>img{
+          padding-top: 20px;
+          margin-top: 50px;
+          height: 100px;
+          height: 60%;
+          
+        }
+        .mean>a>img{
+          padding-top: 20px;
+          margin-top: 50px;
+          height: 60%;
+          height: 180px;
+          /* width: 180px; */
+          padding-right: 200px;
+        }
+        .even>a>img{
+          padding-top: 20px;
+          margin-top: 50px;
+          height: 60%;
+        }
+          /* .odd:hover.img-odd{ */
+          /* transform: scale(2); */
+          /* transition: (0.5s); */
+        /* } */
+        .even:hover.img-even{
+          transform: scale(2)
+          translate(0.5s);
+        }
+        .odd:hover.img-odd{
+          max-width: 500px;
+          max-height: 900px;
+        }
+        .odd:hover{
+            color: rgb(239, 12, 12);
+            font-size: 100px;
+            border: 5px solid;
+            image-resolution: 100px;
+            border-color: rgb(238, 11, 19);
+            
+        }
+        @keyframes animate{
+        0%{
+                transform:  rotatey(0);
+            }
+            100%{
+                transform:  rotatey(360deg);
+            }
+        }
+        .box span {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* gap: 10%; */
+            height: 100%;
+            transform-origin: center;
+            transform-style:preserve-3d;
+            transform: rotatey(calc(var(--i)*100deg)) translatez(300px);
+            -webkit-box-reflect: below 0px linear-gradient(transparent, );
+    
+        }
+        .box span img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        *{
+            margin: 10;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body{
+            display: flex;
+            justify-content: center;
+            /* justify-items: flex-start; */
+            align-items: center;
+            min-height: 100vh;
+            background:white;
+        }
+         .box{
+            position: relative;
+            /* padding-left: 200px; */
+            margin-left: 400px;
+            width: 200px;
+            height: 300px;
+            transform-style: preserve-3d;
+            animation: animate 10s linear infinite;
+        }
+        #basu{
+          display: flex;
+          flex-direction: column;
+
+        }
+        </style>
+        <section id="basu">
+      <body style="background-image: linear-gradient(290deg,rgb(242, 244, 244),rgb(242, 245, 247),rgb(246, 249, 251))">
+        <div class="box">
+          <span style="--i:1"><img src="https://as1.ftcdn.net/v2/jpg/04/70/87/38/1000_F_470873870_snvhO8mRhm5hZ9qPyjn779m0XeA58jwS.jpg" alt=""></span> <br>
+          <span style="--i:2"><img src="https://knowledge.wharton.upenn.edu/wp-content/uploads/2016/08/voter-app-600x440.jpg" alt=""></span> <br>
+          <span style="--i:3"><img src="https://media.licdn.com/dms/image/C4E12AQE2y8mqQ7tb4g/article-cover_image-shrink_720_1280/0/1641439798446?e=2147483647&v=beta&t=oHf5seJFlaeKTLfeUDhl0dVhGSkqUGqEuObGrXC6x7A" alt=""></span> <br>
+          <span style="--i:4"><img src="https://www.indifi.com/blog/wp-content/uploads/2022/05/Vote-In-India.jpeg" alt=""></span> <br>
+          <span style="--i:5 "><img src="https://as2.ftcdn.net/v2/jpg/06/01/29/39/1000_F_601293919_vSA0uzgqDIRPxswtvSp8YccMPndMFMLR.jpg" alt=""></span> <br>
+          <span style="--i:6 "><img src="https://electionbuddy.com/wp-content/uploads/2022/01/Voting-image-6-scaled.jpg" alt=""></span> <br>
+          <span style="--i:7 "><img src="https://as2.ftcdn.net/v2/jpg/03/54/87/75/1000_F_354877542_SFyvLSVFX5NfSxFJnCab2zuB8KX97DZQ.jpg" alt=""></span> <br>
+      </div>
+      </map>
+      <br>
+      <br>
+      <br>
+      <div class="ten">
+        <div class="mean">
+        <a href="https://economictimes.indiatimes.com/news/elections/lok-sabha/india/2395-344-candidates-in-fray-for-ap-assembly-lok-sabha-polls/articleshow/68649321.cms?from=mdr"target="_blank"><img src="https://assets.telegraphindia.com/telegraph/2023/May/1683555608_vote.jpg" height="250";width="100"></a>
+        </div>
+        <div class="even">
+       <a href="https://thesouthfirst.com/andhrapradesh/peoples-pulse-1st-tracker-poll-puts-ysrcp-ahead-in-6-of-7-st-assembly-seats-of-andhra-pradesh/" target="_blank"><img src="https://thesouthfirst.com/wp-content/uploads/2023/01/Peoples-Pulse-Graph-voting-age.jpeg" height="20";width="150px"></a>
+        </div>
+        <div class="odd">
+      <a href="https://aplegislature.org/web/legislative-assembly/member-s-information" target="_blank"><img src="https://irrigationap.cgg.gov.in/img/apmaps/APMAP.jpg" height="250";width="100"></a>
+       </div>
+       </div>
+      <div>
+<section id="media">
+        <div id="one">
+          <h3>Find us on</h3><br>
+          <br>
+          <br>
+        </div>
+        <div id="two">
+          <ul>
+           <li> <a href="https://eci.gov.in/"target="_blank"><img src="https://voters.eci.gov.in/static/media/networkIcon.c081a896daa4b7964732b3287a2327e8.svg" height="45";width="50"></a></li>
+             <li><a href ="https://www.youtube.com/eci" target="_blank"> <img id="img14" src="https://voters.eci.gov.in/static/media/youtubeIcon.371b8da8807b82d264644f54fbdfa621.svg"  height="40";width="50"></a></li>
+             <li><a href="https://www.instagram.com/ecisveep/" target="_blank" ><img src="https://voters.eci.gov.in/static/media/instagramIcon.f3b2fdc9869f3c5076547e649124b4e6.svg" height="40";width="50"></a></li>
+             <li><a href="https://twitter.com/ECISVEEP" target="_blank"><img src="https://voters.eci.gov.in/static/media/twitterIcon.6983133fd92822c2fec0c5ba53cd16f8.svg" height="40";width="50"></a></li>
+            <li><a href="https://www.facebook.com/ECI/" target="_blank"> <img src="https://voters.eci.gov.in/static/media/facebookIcon.d6e99ddecbb0a48fd08607b7f02a1ebe.svg" height="40";width="50"></a></li>  
+          </ul>
+        </div>
+        <div id="three">
+          <a href="https://eci.gov.in/website-policy/privacy-policy-r5/">Privacy Policy</a>
+        </div>
+
+      </section>
+      </div>
+      </body>
+      </section>
+        </html>
+            
